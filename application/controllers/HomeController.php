@@ -41,7 +41,7 @@ class HomeController extends MY_Controller
         $this->load->library('session');
         $this->load->library('email');
         $this->load->library('pagination');
-
+        
         if (!empty($this->session->login)) {
             $this->user = $this->useraccount->get_info_rule(array('email' => $this->session->userdata('login')));
         }

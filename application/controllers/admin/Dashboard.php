@@ -40,8 +40,8 @@ class Dashboard extends Admin_Controller {
             $this->data['memory_usepercent'] = $this->dashboard_model->memory_usepercent(TRUE, FALSE);
 
 
-            /* TEST */
-            $this->data['url_exist']    = is_url_exist('http://www.domprojects.com');
+            // /* TEST */
+            // $this->data['url_exist']    = is_url_exist('http://www.domprojects.com');
 
 
             /* Load Template */

@@ -59,6 +59,7 @@ class MY_Controller extends CI_Controller
                 $this->session->unset_userdata('waitForApprove');
             }
         }
+        
     }
 
 

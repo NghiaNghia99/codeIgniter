@@ -371,8 +371,8 @@ $route['get-videos-limit'] = 'HomeController/getVideosLimit';
 $route['get-posters-limit'] = 'HomeController/getPostersLimit';
 $route['get-papers-limit'] = 'HomeController/getPapersLimit';
 // admin
-$route['admin'] = 'admin/auth/login';
-$route['admin/(:any)'] = 'admin/dashboard/index/$1';
+$route['admin/login'] = 'admin/auth/login';
+$route['admin'] = 'admin/dashboard/index';
 $route['admin/prefs/interfaces/(:any)'] = 'admin/prefs/interfaces/$1';
 /*
  * Default

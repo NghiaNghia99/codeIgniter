@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <p class="login-box-msg"><?php echo lang('auth_sign_session'); ?></p>
                 <?php echo $message;?>
 
-                <?php echo form_open('auth/login');?>
+                <?php echo form_open('admin/auth/login');?>
                     <div class="form-group has-feedback">
                         <?php echo form_input($identity);?>
                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>

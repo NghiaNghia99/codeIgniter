@@ -46,9 +46,7 @@ class Ion_auth
 		$this->load->library(array('email'));
 		$this->lang->load('ion_auth');
 		$this->load->helper(array('cookie', 'language','url'));
-
 		$this->load->library('session');
-
 		$this->load->model('ion_auth_model');
 
 		$this->_cache_user_in_group =& $this->ion_auth_model->_cache_user_in_group;
@@ -61,6 +59,7 @@ class Ion_auth
 		}
 
 		$this->ion_auth_model->trigger_events('library_constructor');
+		
 	}
 
 	/**

@@ -372,7 +372,7 @@ $route['get-posters-limit'] = 'HomeController/getPostersLimit';
 $route['get-papers-limit'] = 'HomeController/getPapersLimit';
 // admin
 $route['admin/login'] = 'admin/auth/login';
-$route['admin'] = 'admin/dashboard/index';
+$route['admin'] = 'admin/dashboard';
 $route['admin/prefs/interfaces/(:any)'] = 'admin/prefs/interfaces/$1';
 /*
  * Default

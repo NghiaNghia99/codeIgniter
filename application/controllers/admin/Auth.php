@@ -12,7 +12,8 @@ class Auth extends MY_Controller {
             $this->config->item('error_end_delimiter', 'ion_auth')
         );
         $this->lang->load('auth');
-        $this->load->library('template'); 
+        $this->load->library('template');
+        
 	}
 
 
@@ -35,7 +36,7 @@ class Auth extends MY_Controller {
         {
             /* Load */
             $this->load->config('admin/dp_config');
-            $this->load->config('common/dp_config');    
+            $this->load->config('common/dp_config');
             /* Valid form */
             $this->form_validation->set_rules('identity', 'Identity', 'required');
             $this->form_validation->set_rules('password', 'Password', 'required');
@@ -49,7 +50,7 @@ class Auth extends MY_Controller {
         /* COMMON :: ADMIN & PUBLIC */
         /* Load */
         $this->load->database();
-
+            
         /* Data */
         $this->data['lang'] = element($this->config->item('language'), $this->config->item('language_abbr'));
         $this->data['charset'] = $this->config->item('charset');

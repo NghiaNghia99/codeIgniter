@@ -374,6 +374,7 @@ $route['get-papers-limit'] = 'HomeController/getPapersLimit';
 $route['admin/login'] = 'admin/auth/login';
 $route['admin'] = 'admin/dashboard';
 $route['admin/prefs/interfaces/(:any)'] = 'admin/prefs/interfaces/$1';
+$route['admin/logout'] = 'admin/auth/logout';
 /*
  * Default
  * */

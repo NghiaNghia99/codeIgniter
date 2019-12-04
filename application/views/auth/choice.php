@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <p><a href="<?php echo site_url('/'); ?>">Home</a></p>
 
-<p><a href="<?php echo site_url('admin/dashboard'); ?>">Admin</a></p>
+<p><a href="<?php echo site_url('admin'); ?>">Admin</a></p>
 
-<p><a href="<?php echo site_url('admin/auth/logout'); ?>">Logout</a></p>
+<p><a href="<?php echo site_url('admin/logout'); ?>">Logout</a></p>
 

@@ -47,5 +47,5 @@ $config['plugins_dir']    = $config['assets_dir'] . '/plugins';
 |--------------------------------------------------------------------------
 |
 */
-$config['upload_dir']     = 'upload';
+$config['upload_dir']     = 'uploads';
 $config['avatar_dir']     = $config['upload_dir'] . '/avatar';

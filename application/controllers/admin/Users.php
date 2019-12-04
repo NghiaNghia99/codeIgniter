@@ -9,18 +9,23 @@ class Users extends Admin_Controller {
 
 		/* Load :: Common */
 		$this->lang->load('admin/users');
-
+		$this->load->library('template');
 		/* Title Page :: Common */
 		$this->page_title->push(lang('menu_users'));
 		$this->data['pagetitle'] = $this->page_title->show();
 
 		/* Breadcrumbs :: Common */
 		$this->breadcrumbs->unshift(1, lang('menu_users'), 'admin/users');
+		 /* Valid form */
+		 $this->form_validation->set_rules('password', 'Password', 'required');
+
+		 
 	}
 
 
 	public function index()
 	{
+		
 		if ( ! $this->ion_auth->logged_in() OR ! $this->ion_auth->is_admin())
 		{
 			redirect('auth/login', 'refresh');
@@ -45,6 +50,8 @@ class Users extends Admin_Controller {
 
 	public function create()
 	{
+
+	
 		/* Breadcrumbs */
 		$this->breadcrumbs->unshift(2, lang('menu_users_create'), 'admin/users/create');
 		$this->data['breadcrumb'] = $this->breadcrumbs->show();

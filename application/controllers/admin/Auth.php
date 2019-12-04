@@ -158,7 +158,7 @@ class Auth extends MY_Controller {
 
         $this->session->set_flashdata('message', $this->ion_auth->messages());
 
-        if ($src == NULL)
+        if ($src == 'admin')
         {
             redirect('auth/login', 'refresh');
         }
